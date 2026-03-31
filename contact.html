@@ -26,15 +26,20 @@
     <hr>
 
     <main>
-        <p id="thankyou" visibility="hidden"></p>
-        
         <section class="contact">
             <h1>Contact Me </h1>
             <p>Let's bring YOUR big ideas to life.</p>
         </section>
+        <section>
+            <!-- Calendly inline widget begin -->
+            <div class="calendly-inline-widget" data-url="https://calendly.com/shakyra-lumadigitalco/30min?text_color=2b2b2b&primary_color=c8a96a" style="min-width:320px;height:700px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+        </section>
+        <p id="moreinfo">Have questions? Contact me for more information!</p>
         <section class="contactform">
-            <div>
-                <form class="contact-form" name="contact" method="POST" data-netlify="true">
+            <div id="form-container">
+                <form id="contact-form" class="contact-form">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Name" required/>
 
@@ -47,6 +52,7 @@
                     <button type="submit">Send Message</button>
                 </form>
             </div>
+            <p id="thankyou" hidden></p>
         </section>
     </main>
 
@@ -62,7 +68,7 @@
             <!-- MIDDLE: Navigation -->
             <div class="footer-section footer-links">
                 <h4>Explore</h4>
-                <a href="home.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="projects.html">Work</a>
                 <a href="contact.html">Contact</a>
@@ -72,7 +78,7 @@
             <div class="footer-section footer-contact">
                 <h4>Contact</h4>
                 <!-- ✅ Email (clickable) -->
-                <p><a href="mailto:shakyra@lumadigitalco.com?subject=Portfolio Inquiry">shakyra@lumadigitalco.com</a></p>
+                <p><a href="mailto:shakyra@lumadigitalco.com?subject=Inquiry">shakyra@lumadigitalco.com</a></p>
                 <!-- ✅ Phone (clickable on mobile) -->
                 <p><a href="tel:+13105551234">(310) 555-1234</a></p>
                 <p>Los Angeles, CA</p>
@@ -86,6 +92,7 @@
             <p>© 2026 Luma Digital. Designed & developed by Shakyra Johnson.</p>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
