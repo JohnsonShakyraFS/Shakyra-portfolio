@@ -1,0 +1,166 @@
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-hero {
+    background-color: var(--bg-main);
+    padding: 90px 0;
+}
+
+.about-hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    font-size: var(--h1-size);
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: var(--text-secondary);
+    margin-bottom: 18px;
+    max-width: 560px;
+}
+
+.about-text .about-intro {
+    font-size: 20px;
+    color: var(--text-primary);
+}
+
+.about-text .btn {
+    margin-top: 10px;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 460px;
+}
+
+.about-image img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    object-fit: cover;
+}
+
+.about-story {
+    background-color: var(--bg-card);
+    text-align: center;
+}
+
+.about-story .container {
+    max-width: 850px;
+}
+
+.about-story h2,
+.about-skills h2,
+.about-focus h2,
+.cta h2 {
+    font-size: var(--h2-size);
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.about-story p {
+    color: var(--text-secondary);
+    margin: 18px auto 0;
+    max-width: 760px;
+}
+
+.about-skills {
+    text-align: center;
+    background-color: var(--bg-main);
+}
+
+.skill-pill {
+    min-width: 170px;
+    text-align: center;
+    padding: 16px 22px;
+    border-radius: 8px;
+}
+
+.about-focus {
+    background-color: var(--bg-card);
+    text-align: center;
+}
+
+.about-grid .card {
+    text-align: center;
+    padding: 30px 24px;
+}
+
+.about-grid .card h3 {
+    font-size: var(--h3-size);
+    color: var(--text-primary);
+    margin-bottom: 14px;
+}
+
+.about-grid .card p {
+    color: var(--text-secondary);
+}
+
+.cta p {
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+/* =========================
+   ABOUT PAGE RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+    .about-hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text p {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 70px 0;
+    }
+
+    .about-text h1 {
+        font-size: 36px;
+    }
+
+    .about-text .about-intro {
+        font-size: 18px;
+    }
+
+    .skill-pill {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text h1 {
+        font-size: 30px;
+    }
+
+    .about-story h2,
+    .about-skills h2,
+    .about-focus h2,
+    .cta h2 {
+        font-size: 26px;
+    }
+}
