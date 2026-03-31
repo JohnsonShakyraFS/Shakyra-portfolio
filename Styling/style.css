@@ -312,20 +312,25 @@ a.btn-outline:hover,
 /* =========================================
    ABOUT PREVIEW
 ========================================= */
-#approach {
+.approach {
     background-color: var(--bg-section);
     text-align: center;
 }
 
-#approach .container {
-    max-width: 850px;
+.approach .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-#approach p {
-    max-width: 700px;
+.approach h2 {
+    text-align: center;
+}
+
+.approach p {
+    max-width: 650px;
     margin: 20px auto 0;
     color: var(--text-secondary);
-    font-size: var(--text-size);
     line-height: 1.8;
 }
 
@@ -399,6 +404,15 @@ a.btn-outline:hover,
 .footer-contact p {
     margin-bottom: 6px;
     color: var(--text-secondary);
+}
+.footer-contact a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: var(--accent);
 }
 
 /* Footer socials */
